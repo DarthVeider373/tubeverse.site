@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soul Vibration Clothing LP | Women's Wear Boutique – Edinburgh</title>
+<meta name="description" content="Soul Vibration Clothing LP – an independent women's wear store and online boutique based in Edinburgh, United Kingdom. Curated clothing with soul.">
+<meta name="keywords" content="Soul Vibration Clothing, women's wear, Edinburgh clothing store, women's fashion UK, boutique Edinburgh">
+<meta name="author" content="Soul Vibration Clothing LP">
+<meta property="og:title" content="Soul Vibration Clothing LP – Edinburgh">
+<meta property="og:description" content="Curated women's wear, online and in Edinburgh.">
+<meta property="og:type" content="website">
+<meta property="og:locality" content="Edinburgh, United Kingdom">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;rect width='100' height='100' rx='20' fill='%23b3245c'/&gt;&lt;text x='50' y='70' font-size='62' font-family='Georgia,serif' fill='white' text-anchor='middle'&gt;S&lt;/text&gt;&lt;/svg&gt;">
+<style>
+  :root{
+    --plum:#b3245c;
+    --plum-dark:#7e1640;
+    --blush:#f7e8ee;
+    --cream:#fbf7f4;
+    --ink:#2b2230;
+    --muted:#6f6675;
+    --gold:#c9a24b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;}
+  h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:600;line-height:1.2;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{width:90%;max-width:1150px;margin:0 auto;}
+  .btn{display:inline-block;background:var(--plum);color:#fff;padding:14px 34px;border-radius:40px;font-size:.95rem;letter-spacing:.5px;transition:.3s;border:none;cursor:pointer;}
+  .btn:hover{background:var(--plum-dark);transform:translateY(-2px);}
+  .btn-outline{background:transparent;border:1.5px solid #fff;color:#fff;}
+  .btn-outline:hover{background:#fff;color:var(--plum);}
+  section{padding:90px 0;}
+  .section-title{text-align:center;font-size:2.2rem;margin-bottom:14px;color:var(--plum-dark);}
+  .section-sub{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 55px;}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:100;background:rgba(251,247,244,.95);backdrop-filter:blur(8px);border-bottom:1px solid #eadfe3;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+  .logo{font-family:Georgia,serif;font-size:1.5rem;color:var(--plum-dark);letter-spacing:1px;}
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:30px;list-style:none;}
+  .nav-links a{font-size:.92rem;letter-spacing:.5px;transition:.2s;}
+  .nav-links a:hover{color:var(--plum);}
+  .menu-toggle{display:none;font-size:1.6rem;background:none;border:none;cursor:pointer;color:var(--plum-dark);}
+
+  /* Hero */
+  .hero{min-height:88vh;display:flex;align-items:center;
+    background:linear-gradient(135deg,rgba(126,22,64,.78),rgba(179,36,92,.55)),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1400&q=80") center/cover;
+    color:#fff;text-align:center;}
+  .hero-inner{max-width:760px;margin:0 auto;}
+  .hero .tag{letter-spacing:4px;font-size:.8rem;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+  .hero h1{font-size:3.4rem;margin-bottom:22px;}
+  .hero p{font-size:1.15rem;margin-bottom:38px;opacity:.95;}
+  .hero .btn{margin:0 8px;}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;}
+  .about-img{border-radius:18px;height:400px;overflow:hidden;}
+  .about-img img{width:100%;height:100%;object-fit:cover;}
+  .about-text h2{font-size:2rem;color:var(--plum-dark);margin-bottom:20px;}
+  .about-text p{color:var(--muted);margin-bottom:16px;}
+  .stats{display:flex;gap:35px;margin-top:25px;}
+  .stat strong{display:block;font-size:1.8rem;color:var(--plum);font-family:Georgia,serif;}
+  .stat span{font-size:.85rem;color:var(--muted);}
+
+  /* Products */
+  #products{background:var(--blush);}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+  .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(126,22,64,.07);transition:.3s;}
+  .card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(126,22,64,.14);}
+  .card-img{height:280px;overflow:hidden;}
+  .card-img img{width:100%;height:100%;object-fit:cover;transition:.4s;}
+  .card:hover .card-img img{transform:scale(1.06);}
+  .card-body{padding:22px;}
+  .card-body h3{font-size:1.2rem;margin-bottom:8px;color:var(--plum-dark);}
+  .card-body p{font-size:.9rem;color:var(--muted);}
+
+  /* Testimonials */
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+  .quote{background:#fff;border-radius:16px;padding:32px;border-top:4px solid var(--plum);box-shadow:0 6px 18px rgba(0,0,0,.04);}
+  .quote p{font-style:italic;color:var(--muted);margin-bottom:18px;}
+  .quote .who{display:flex;align-items:center;gap:12px;}
+  .avatar{width:46px;height:46px;border-radius:50%;background:var(--plum);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.1rem;}
+  .quote .who strong{display:block;font-size:.95rem;color:var(--ink);}
+  .quote .who span{font-size:.8rem;color:var(--muted);}
+  .stars{color:var(--gold);margin-bottom:14px;letter-spacing:2px;}
+
+  /* Contact */
+  #contact{background:var(--plum-dark);color:#fff;}
+  #contact .section-title{color:#fff;}
+  #contact .section-sub{color:rgba(255,255,255,.8);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;}
+  .contact-info p{margin-bottom:18px;display:flex;gap:12px;align-items:flex-start;}
+  .contact-info .ico{color:var(--gold);font-size:1.1rem;min-width:22px;}
+  form{display:flex;flex-direction:column;gap:16px;}
+  form input,form textarea{padding:14px;border:none;border-radius:10px;font-size:.95rem;font-family:inherit;background:rgba(255,255,255,.95);}
+  form textarea{resize:vertical;min-height:120px;}
+  .form-msg{display:none;background:var(--gold);color:#2b2230;padding:12px;border-radius:10px;font-size:.9rem;text-align:center;}
+
+  /* Footer */
+  footer{background:var(--ink);color:#cfc6d3;padding:55px 0 25px;font-size:.88rem;}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:40px;margin-bottom:35px;}
+  footer h4{color:#fff;font-family:Georgia,serif;margin-bottom:16px;font-size:1.1rem;}
+  footer a{color:#cfc6d3;transition:.2s;}
+  footer a:hover{color:var(--gold);}
+  footer ul{list-style:none;}
+  footer li{margin-bottom:9px;}
+  .legal{border-top:1px solid #3a3340;padding-top:20px;line-height:1.8;}
+  .legal p{margin-bottom:4px;}
+  .copy{text-align:center;margin-top:18px;color:#8c8294;font-size:.82rem;}
+
+  /* Modal pages */
+  .page-modal{display:none;position:fixed;inset:0;z-index:200;background:rgba(43,34,48,.6);overflow-y:auto;padding:40px 15px;}
+  .page-modal.open{display:block;}
+  .modal-box{background:#fff;max-width:760px;margin:0 auto;border-radius:16px;padding:45px;position:relative;}
+  .modal-box h2{color:var(--plum-dark);margin-bottom:20px;}
+  .modal-box h3{margin:24px 0 8px;font-size:1.1rem;color:var(--ink);}
+  .modal-box p{color:var(--muted);margin-bottom:12px;font-size:.93rem;}
+  .modal-close{position:absolute;top:18px;right:22px;background:none;border:none;font-size:1.8rem;cursor:pointer;color:var(--muted);line-height:1;}
+
+  @media(max-width:860px){
+    .nav-links{position:fixed;top:64px;right:-100%;flex-direction:column;background:var(--cream);width:240px;height:100vh;padding:35px 25px;gap:22px;box-shadow:-4px 0 18px rgba(0,0,0,.1);transition:.3s;}
+    .nav-links.open{right:0;}
+    .menu-toggle{display:block;}
+    .hero h1{font-size:2.3rem;}
+    .about-grid,.cards,.quotes,.contact-grid,.foot-grid{grid-template-columns:1fr;}
+    .section-title{font-size:1.8rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="logo">Soul Vibration<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#products" onclick="closeMenu()">Shop</a></li>
+      <li><a href="#testimonials" onclick="closeMenu()">Reviews</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <p class="tag">Women's Wear · Edinburgh</p>
+    <h1>Clothing with a little more soul</h1>
+    <p>A small independent boutique curating thoughtful, easy-to-love women's wear — online and from the heart of Edinburgh.</p>
+    <a href="#products" class="btn">Explore the Collection</a>
+    <a href="#about" class="btn btn-outline">Our Story</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Rail of curated women's clothing in our Edinburgh boutique">
+    </div>
+    <div class="about-text">
+      <h2>About Soul Vibration</h2>
+      <p>Soul Vibration Clothing started with a simple idea: that getting dressed should feel good, not complicated. We're a small, independent women's wear store based on Brunswick Street, and we put the same care into our online shop as we do into our shelves.</p>
+      <p>Every piece we stock is chosen by hand. We look for pieces that wear well, last longer and feel like you — relaxed staples, soft layers and the kind of dresses you reach for again and again.</p>
+      <div class="stats">
+        <div class="stat"><strong>2016</strong><span>Established</span></div>
+        <div class="stat"><strong>5k+</strong><span>Happy customers</span></div>
+        <div class="stat"><strong>UK</strong><span>Wide delivery</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <h2 class="section-title">Shop by Edit</h2>
+    <p class="section-sub">A rotating selection of women's wear — refreshed with the seasons, kept simple all year round.</p>
+    <div class="cards">
+      <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Everyday dresses"></div><div class="card-body"><h3>Everyday Dresses</h3><p>Easy, throw-on shapes in soft, breathable fabrics for any day of the week.</p></div></div>
+      <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Knitwear and layers"></div><div class="card-body"><h3>Knitwear &amp; Layers</h3><p>Cosy jumpers and cardigans built for Edinburgh weather and beyond.</p></div></div>
+      <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Tops and blouses"></div><div class="card-body"><h3>Tops &amp; Blouses</h3><p>From relaxed tees to dressed-up blouses, the foundations of any wardrobe.</p></div></div>
+      <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Trousers and denim"></div><div class="card-body"><h3>Trousers &amp; Denim</h3><p>Well-cut trousers and denim that move with you, day to night.</p></div></div>
+      <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Outerwear coats and jackets"></div><div class="card-body"><h3>Outerwear</h3><p>Coats and jackets to see you through every season in style.</p></div></div>
+      <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Accessories scarves and bags"></div><div class="card-body"><h3>Accessories</h3><p>The finishing touches — scarves, bags and little extras we love.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <p class="section-sub">We're grateful for every kind word — here are a few from the people who shop with us.</p>
+    <div class="quotes">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>"Lovely little shop with a really well-chosen selection. Ordered a dress online and it arrived beautifully wrapped within two days."</p>
+        <div class="who"><div class="avatar">EM</div><div><strong>Emma M.</strong><span>Edinburgh</span></div></div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>"Genuinely helpful and honest staff. They helped me find pieces that actually suit me rather than just pushing a sale."</p>
+        <div class="who"><div class="avatar">SR</div><div><strong>Sophie R.</strong><span>Glasgow</span></div></div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>"Quality is so much better than the high street and the prices are fair. My go-to for everyday wear now."</p>
+        <div class="who"><div class="avatar">KL</div><div><strong>Katie L.</strong><span>Leith</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-sub">Questions about an order, a size or a stock query? Send us a message and we'll get back to you.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><span class="ico">📍</span> 69 Brunswick Street, Edinburgh, EH7 5HT, United Kingdom</p>
+        <p><span class="ico">✉️</span> contact@tubeverse.site</p>
+        <p><span class="ico">🕘</span> Mon–Sat: 10:00 – 18:00 · Online store open 24/7</p>
+        <p><span class="ico">🚚</span> UK-wide delivery available on all online orders.</p>
+      </div>
+      <form onsubmit="return submitForm(event)">
+        <input type="text" placeholder="Your name" required="">
+        <input type="email" placeholder="Your email" required="">
+        <textarea placeholder="Your message" required=""></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <div class="form-msg" id="formMsg">Thank you — your message has been sent. We'll be in touch soon.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Soul Vibration Clothing LP</h4>
+        <p>An independent women's wear boutique and online store, registered in Scotland. Curated clothing with soul, delivered across the UK.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" onclick="openModal('privacy');return false;">Privacy Policy</a></li>
+          <li><a href="#" onclick="openModal('terms');return false;">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company Details</h4>
+        <div class="legal">
+          <p><strong>Soul Vibration Clothing LP</strong></p>
+          <p>Company Number: SL27633</p>
+          <p>69 Brunswick Street, Edinburgh, EH7 5HT, United Kingdom</p>
+          <p>Email: contact@tubeverse.site</p>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Soul Vibration Clothing LP - All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- PRIVACY MODAL -->
+<div class="page-modal" id="privacy">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('privacy')">×</button>
+    <h2>Privacy Policy</h2>
+    <p>This Privacy Policy explains how Soul Vibration Clothing LP ("we", "us", "our") collects, uses and protects information you provide when using our website and services.</p>
+    <h3>1. Who We Are</h3>
+    <p>Soul Vibration Clothing LP, Company Number SL27633, registered at 69 Brunswick Street, Edinburgh, EH7 5HT, United Kingdom. You can contact us at contact@tubeverse.site.</p>
+    <h3>2. Information We Collect</h3>
+    <p>We may collect your name, email address, delivery details and any information you choose to share through our contact form or when placing an order.</p>
+    <h3>3. How We Use Your Information</h3>
+    <p>We use your information to respond to enquiries, process and deliver orders, provide customer support and, where you have agreed, send occasional updates about our products.</p>
+    <h3>4. Sharing Your Information</h3>
+    <p>We do not sell your personal data. We only share information with trusted service providers (such as delivery partners) where necessary to fulfil your order, and where required by law.</p>
+    <h3>5. Data Retention</h3>
+    <p>We keep your information only for as long as necessary to fulfil the purposes described in this policy or to comply with our legal obligations.</p>
+    <h3>6. Your Rights</h3>
+    <p>You have the right to access, correct or request deletion of your personal data. To exercise these rights, contact us at contact@tubeverse.site.</p>
+    <h3>7. Updates</h3>
+    <p>We may update this policy from time to time. Any changes will be posted on this page.</p>
+  </div>
+</div>
+
+<!-- TERMS MODAL -->
+<div class="page-modal" id="terms">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('terms')">×</button>
+    <h2>Terms of Use</h2>
+    <p>These Terms of Use govern your access to and use of the website operated by Soul Vibration Clothing LP. By using this website, you agree to these terms.</p>
+    <h3>1. Company Information</h3>
+    <p>Soul Vibration Clothing LP, Company Number SL27633, registered at 69 Brunswick Street, Edinburgh, EH7 5HT, United Kingdom. Contact: contact@tubeverse.site.</p>
+    <h3>2. Use of the Website</h3>
+    <p>You agree to use this website lawfully and not to misuse it in any way that could damage, disable or impair its operation or interfere with another person's use of it.</p>
+    <h3>3. Products and Pricing</h3>
+    <p>We make every effort to display our products and prices accurately. However, descriptions, availability and prices may change without notice. Orders are subject to acceptance and availability.</p>
+    <h3>4. Intellectual Property</h3>
+    <p>All content on this website, including text, images and branding, is the property of Soul Vibration Clothing LP and may not be reproduced without our written permission.</p>
+    <h3>5. Limitation of Liability</h3>
+    <p>While we take care to keep our content accurate and our website running smoothly, we do not guarantee that it will always be available or error-free, and we accept no liability for any indirect loss arising from its use.</p>
+    <h3>6. Governing Law</h3>
+    <p>These terms are governed by the laws of Scotland, and any disputes will be subject to the jurisdiction of the Scottish courts.</p>
+    <h3>7. Contact</h3>
+    <p>For any questions about these terms, please contact us at contact@tubeverse.site.</p>
+  </div>
+</div>
+
+<script>
+  function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+  function closeMenu(){document.getElementById('navLinks').classList.remove('open');}
+  function submitForm(e){
+    e.preventDefault();
+    document.getElementById('formMsg').style.display='block';
+    e.target.reset();
+    return false;
+  }
+  function openModal(id){document.getElementById(id).classList.add('open');document.body.style.overflow='hidden';}
+  function closeModal(id){document.getElementById(id).classList.remove('open');document.body.style.overflow='';}
+  document.querySelectorAll('.page-modal').forEach(m=>{
+    m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('open');document.body.style.overflow='';}});
+  });
+</script>
+
+
+</body></html>
